@@ -1,0 +1,504 @@
+﻿
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	Sente eHRM
+</title>
+    <script type="text/javascript" src="webgui/scripts/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css" /><link rel="stylesheet" href="PrintStyleSheet.css" type="text/css" media="print" /><link rel="stylesheet" href="webgui/css/base/jquery.ui.all.css" /><link rel="stylesheet" href="webgui/css/TimeWorkStyle.css" /><link rel="stylesheet" href="webgui/css/jquery.ui.timepicker.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="webgui/scripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery-migrate-1.1.1.min.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery-ui-1.8.11.custom.min.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.position.min.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.tabs.min.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.core.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.datepicker.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.datepicker-pl.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.timepicker.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.ui.timepicker-pl.js"></script>
+    <script type="text/javascript" src="webgui/scripts/scripts.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.contextmenu.r2.js"></script>
+    <script type="text/javascript" src="webgui/scripts/jquery.maskedinput-1.2.2.js"></script>
+    <script type="text/javascript">
+        $('div.loader').show();
+        $(window).unload(function () {
+            $('div.loader').show();
+        });
+        $(window).load(function () {
+            $('div.loader').hide();
+        });
+	</script>
+	
+</head>
+<body>
+    <!-- <form name="aspnetForm" method="post" action="Default.aspx" id="aspnetForm"> -->
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzcyMjA4MDEzD2QWAmYPZBYCAgMPZBYIAgQPDxYCHgRUZXh0BQVTdGFydGRkAggPEGQPFgJmAgEWAhAFL1Vtb3dhIHogZG5pYSAyMDE3LTAxLTAxLCBLSUVST1dOSUsgU0tMRVBVLCBURVNUBQQ4NTI0ZxAFL1Vtb3dhIHogZG5pYSAyMDE5LTAxLTAxLCBLSUVST1dOSUsgU0tMRVBVLCBURVNUBQUxMDIyNmcWAWZkAhoPEA8WBB4LXyFEYXRhQm91bmRnHgdWaXNpYmxlaGRkFgBkAhsPZBYiAgEPDxYCHghJbWFnZVVybAUnU2NhbGVQaG90by5hc3B4P2ZpbGVwYXRoPSZkZXN0V2lkdGg9MjIwZGQCAw8PFgIfAAUQU2h1cmxvY2tlIER1cmhhbWRkAgkPDxYCHwAFCVNodXJsb2NrZWRkAg0PDxYCHwAFBkR1cmhhbWRkAhEPDxYCHwAFEEtJRVJPV05JSyBTS0xFUFVkZAIVDw8WAh8ABQpTa2xlcCBTMjYyZGQCGQ8PFgIfAGRkZAIdDw8WAh8ABQlTaHVybG9ja2VkZAIhDw8WAh8ABQZEdXJoYW1kZAIlDw8WAh8AZWRkAikPDxYCHwBlZGQCLQ8PFgIfAAULNzYxMjI5MzkyNDVkZAIxDw8WAh8AZWRkAjUPDxYCHwAFCjE5NzYtMTItMjlkZAI5Dw8WAh8ABQk4ODEwMjE5OTFkZAI9DxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWFgIDDw8WAh8ABRJBZHJlcyB6YW1lbGRvd2FuaWFkZAIHD2QWAmYPFQIAAVdkAgsPZBYCZg8VAQExZAIPD2QWAmYPFQEAZAITD2QWAmYPFQEFMTExMTFkAhcPZBYCZg8VAQBkAhsPZBYCZg8VAQFXZAIfD2QWAmYPFQEMY3rEmXN0b2Nob3dhZAIjD2QWAmYPFQEMY3rEmXN0b2Nob3dhZAInD2QWAmYPFQEJxZtsxIVza2llZAIrD2QWAmYPFQEAZAI/Dw8WAh8CaGRkGAEFEGN0bDAwJExvZ2luVmlldzIPD2QCAWQaizO4/IxV7VI7G9+toyUjua/10w==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+/*funkcje do podmenu z sekcjami danych*/
+function userPersonalDataFunction() {
+	var boxes = document.getElementsByClassName('userDataBox');
+		for(var i = 0; i< boxes.length; i++){
+			boxes[i].style.display = 'none';
+		}
+	document.getElementById("personalData").style.display = "flex";
+	$(".userMenuList").children().removeClass("activeDataBox");
+	$(".userMenuPersonalData").addClass("activeDataBox");
+}
+function userAdressDataFunction() {
+	var boxes = document.getElementsByClassName('userDataBox');
+		for(var i = 0; i< boxes.length; i++){
+			boxes[i].style.display = 'none';
+		}
+	var adressBoxes = document.getElementsByClassName("addressData");
+		for(var i = 0; i< adressBoxes.length; i++){
+				adressBoxes[i].style.display = "flex";
+			}
+	
+	$(".userMenuList").children().removeClass("activeDataBox");
+	$(".userMenuAddressData").addClass("activeDataBox");
+}
+function userBankDataFunction() {
+	var boxes = document.getElementsByClassName('userDataBox');
+		for(var i = 0; i< boxes.length; i++){
+			boxes[i].style.display = 'none';
+		}
+	document.getElementById("bankData").style.display = "flex";
+	$(".userMenuList").children().removeClass("activeDataBox");
+	$(".userMenuBankData").addClass("activeDataBox");
+}
+function userTaxDataFunction() {
+	var boxes = document.getElementsByClassName('userDataBox');
+		for(var i = 0; i< boxes.length; i++){
+			boxes[i].style.display = 'none';
+		}
+	document.getElementById("taxOfficeData").style.display = "flex";
+	$(".userMenuList").children().removeClass("activeDataBox");
+	$(".userMenuTaxData").addClass("activeDataBox");
+}
+function inputAbled(){
+	$('*:disabled').prop( "disabled", false );
+}
+/*funkcje do podmenu z sekcjami danych*/
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWDAL09pjSCwKLkrn2CAKDyurQBgLrys+VBwLArNHDCAK7/ZKjDALOwp68BgKsutreCgLT3oroAQLT3v7nAQKun6jaBQKRzNmjBt8ip1X1C/Mxmp3o20mcqyHx7/iD" />
+</div>
+        <div class="loader">
+            <div class="loading">
+                <img src="ajax-loader.gif" alt="Trwa ładowanie strony" />
+            </div>
+        </div>
+        <span id="ctl00_label1"></span>
+
+        <div id="topPanel">
+            <div id="productName">
+                <a id="ctl00_lProductName" class="companyName" href="Default.aspx">SENTE eHRM</a>
+            </div>
+            <div id="pathPanel">
+                <font id="whereAreYou">
+                    <span id="ctl00_Path">Start</span></font>
+            </div>
+            <div id="persFuncs">
+                <a id="ctl00_LinkButton2" href="javascript:__doPostBack('ctl00$LinkButton2','')"><strong>Wyloguj</strong></a>
+            </div>
+            <div id="title">
+                <span id="ctl00_emplProfile" style="color:White;font-size:Smaller;font-weight:bold;">Profil: </span>
+                <select name="ctl00$DropDownListEMPL" onchange="javascript:setTimeout('__doPostBack(\'ctl00$DropDownListEMPL\',\'\')', 0)" id="ctl00_DropDownListEMPL" style="font-size:11px;font-weight:normal;width:300px;">
+	<option selected="selected" value="8524">Umowa z dnia 2017-01-01, KIEROWNIK SKLEPU, TEST</option>
+	<option value="10226">Umowa z dnia 2019-01-01, KIEROWNIK SKLEPU, TEST</option>
+	flex
+</select>
+    </div>
+    </div>
+    <div id="bodyDiv">
+        <div id="rightMenu">
+            <ul>
+				<li class="liNoMenu opener pointer clipboard1" id="openerFormularze">
+					<svg><use xlink:href="Pictures/esystem/sprite.svg#icon-file-text"></use></svg>
+					<span>Formularze</span>				
+				</li>
+				<li class="subMenu">
+					<ul>
+						<li><a runat="server" href="FormMedicalExamination.aspx" class="subMenu">Formularz zgłaszania pracownika</a></li>
+					</ul>
+				</li>
+				<li class="liNoMenu opener pointer clipboard1" id="openerNieobecnoci" >
+					<svg><use xlink:href="Pictures/esystem/sprite.svg#icon-user-x"></use></svg>
+					<span>Nieobecności</span>	
+				</li>
+				<li class="subMenu">
+					<ul>
+						<li><a runat="server" href="Absences.aspx" class="subMenu">Nieobecności</a></li>
+						<li><a runat="server" href="InferiorsAbsences.aspx" class="subMenu">Nieobecności podwładnych</a></li>
+						<li><a runat="server" href="InferiorsPetitions.aspx" class="subMenu">Wnioski i plany podwładnych</a></li>
+						<li><a runat="server" href="VacationPlan.aspx" class="subMenu">Plany urlopowe</a></li>
+						<li><a runat="server" href="Delegations.aspx" class="subMenu">Delegacje</a></li>
+						<li><a runat="server" href="Petition.aspx" class="subMenu">Wnioski</a></li>
+					</ul>
+				</li>
+				<li class="liNoMenu opener pointer clipboard1" id="openerGrafiki">
+					<svg><use xlink:href="Pictures/esystem/sprite.svg#icon-clipboard"></use></svg>
+					<span>Grafiki</span>
+				</li>
+				<li class="subMenu">
+					<ul>
+						<li><a runat="server" href="rosters.aspx" class="subMenu">Grafiki pracownik&#243;w</a></li>
+						<li><a runat="server" href="RosterShifts.aspx" class="subMenu">Definicja zmian</a></li>
+					</ul>
+				</li>
+				<li class="liNoMenu opener pointer clipboard1" id="openerRejestrczasupracy">
+					<svg><use xlink:href="Pictures/esystem/sprite.svg#icon-clock"></use></svg>
+					<span>Rejestr czasu pracy</span>	
+				</li>
+				<li class="subMenu">
+					<ul>
+						<li><a runat="server" href="WorkTimeRecords.aspx" class="subMenu">Rejestracja czasu pracy</a></li>
+					</ul>
+				</li>
+				<li class="liNoMenu opener pointer clipboard1" id="openerWynagrodzenia">
+					<svg><use xlink:href="Pictures/esystem/sprite.svg#icon-dollar-sign"></use></svg>
+					<span>Wynagrodzenia</span>	
+				</li>
+				<li class="subMenu">
+					<ul>
+						<li><a runat="server" href="Payrolls.aspx" class="subMenu">Listy płac</a></li>
+						<li><a runat="server" href="Bills.aspx" class="subMenu">Rachunki</a></li>
+						<li><a runat="server" href="Contracts.aspx" class="subMenu">Twoje umowy</a></li>
+					</ul>
+				</li>
+				<li class="liNoMenu opener pointer clipboard1" id="openerZadania">
+					<svg><use xlink:href="Pictures/esystem/sprite.svg#icon-list"></use></svg>
+					<span>Zadania</span>	
+				</li>
+				<li class="subMenu">
+					<ul>
+						<li><a runat="server" href="Applications.aspx" class="subMenu">Wnioski do kard</a></li>
+						<li><a runat="server" href="ChangePassword.aspx" class="subMenu">Zmiana hasła</a></li>
+					</ul>
+				</li>
+				<li class="liNoMenu opener pointer clipboard1" id="openerDokumenty">
+					<svg><use xlink:href="Pictures/esystem/sprite.svg#icon-archive"></use></svg>
+					<span>Dokumenty</span>
+				</li>
+				<li class="subMenu">
+					<ul>
+						<li><a runat="server" href="Documents.aspx?dir=Prywatne" class="subMenu">Prywatne</a></li>
+						<li><a runat="server" href="Documents.aspx?dir=Publiczne" class="subMenu">Publiczne</a></li>
+					</ul>
+				</li>
+			</ul>       
+		</div>
+
+<div id="pageContent">        
+<div id="defaultCointainer">
+	<div class="userTitle">
+		<div class="title">
+			<h1>Data Service Collector</h1>
+			<h2 id="ctl00_Body_LabelNameAndLastName">Shurlocke Durham</h2>
+			<h3>Kierownik sklepu</h3>
+		</div>
+		<button class="userPasswordChange" id="passwordChange">
+			Zmień&nbsphasło
+		</button>
+	</div>
+	<div class="userMenuList">
+		<div class="userMenuPersonalData" onclick=userPersonalDataFunction()>
+			Dane osobowe
+		</div>
+		<div class="userMenuAddressData" onclick=userAdressDataFunction()>
+			Dane adresowe
+		</div>
+		<div class="userMenuBankData" onclick=userBankDataFunction()>
+			Konta bankowe				
+			<svg class="userDataBox_icon_small"><use xlink:href="Pictures/sprite.svg#icon-time"></use></svg>
+		</div>
+		<div class="userMenuTaxData" onclick=userTaxDataFunction()>
+			Urząd skarbowy
+		</div>
+	</div>
+
+    <div id="personalData" class="userDataBox" style="display: flex">
+		<div class="dataBoxTitle">
+			<div class="userDataBoxPic">
+				<svg class="userDataBox_icon"><use xlink:href="Pictures/sprite.svg#icon-fingerprint"></use></svg>
+			</div>
+			<h2>Dane osobowe</h2>
+			<div class="userDataBoxTitleBtnContainer">
+				<button class="personalDataEdit userDataBoxTitleBtn" onclick=inputAbled()>Edytuj</button>
+				<button class="personalDataAdd userDataBoxTitleBtn">Dodaj</button>
+			</div>
+			<div class="userDataButtons">
+				<button class="personalDataSave userDataBoxTitleBtn">Zapisz</button>
+			</div> 
+		</div>
+		<div class="userDataBoxItems">
+			<form>
+				<label for="ctl00_Body_UsrFNameLabel">Imię:</label>
+					<input disabled="disabled" type="text" name="name" id="ctl00_Body_UsrFNameLabel" value="Shurlocke">
+				<label for="ctl00_Body_UsrSNameLabel">Nazwisko:</label>
+					<input disabled type="text" id="ctl00_Body_UsrSNameLabel" value="Durham">
+				<label for="ctl00_Body_UsrEvidNoLabel">Numer dowodu osobistego:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_UsrEvidNoLabel" value=" - ">
+				<label for="ctl00_Body_UsrPasspNoLabel">Numer paszportu:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_UsrPasspNoLabel" value=" - ">
+			</form>
+		</div>
+		<div class="userDataBoxItems">
+			<form>	
+				<label for="ctl00_Body_UsrPeselLabel">Pesel:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_UsrPeselLabel" value="76122939245">
+				<label for="ctl00_Body_UsrNIPLabel">NIP:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_UsrNIPLabel" value=" - ">
+				<label for="ctl00_Body_UsrBirthdayLabel">Data urodzenia: </label>
+					<input tdisabled="disabled" ype="text" id="ctl00_Body_UsrBirthdayLabel" value="1976-12-29">
+				<label for="ctl00_Body_UsrPhoneLabel">Numer telefonu:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_UsrPhoneLabel" value="881021991">	
+			</form>
+		</div>
+	</div>
+	<div id="addressData" class="userDataBox addressData" style="display: none">
+		<div class="dataBoxTitle">
+			<div class="userDataBoxPic">
+				<svg class="userDataBox_icon"><use xlink:href="Pictures/sprite.svg#icon-mail-envelope-open"></use></svg>
+			</div>
+			<h2>Dane adresowe</h2>
+			<p class="userDataBoxListTitle" id="ctl00_Body_PersonalDataRepeater_ctl00_HeaderLabel"">
+					Adres zameldowania</p>
+			<div class="userDataBoxTitleBtnContainer">
+				<button class="personalDataEdit userDataBoxTitleBtn">Edytuj</button>
+				<button class="personalDataAdd userDataBoxTitleBtn">Dodaj</button>
+			</div>
+			<div class="userDataButtons">
+				<button class="personalDataSave userDataBoxTitleBtn" id="ctl00_Body_PersonDataEdit"
+				href="javascript:__doPostBack('ctl00$Body$PersonDataEdit','')">Zapisz</button>
+			</div> 
+		</div>
+		<div class="userDataBoxItems">
+			<form>
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_StreetLabel">Ulica:</label>
+					<input disabled="disabled" type="text" name="name" id="ctl00_Body_PersonalDataRepeater_ctl00_Street" value="Kreta">
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_HouseNoLabel">Numer domu:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_HouseNo" value="12">
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_LocalNoLabel">Numer mieszkania:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_LocalNo" value="33">
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_PostCodeLabel">Kod pocztowy:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_PostCode" value="00-332">
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_PostLabel">Poczta:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Post" value=" - ">
+			</form>
+		</div>
+		<div class="userDataBoxItems">
+			<form>	
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_CityLabel">Miasto:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_City" value="Kazimierz Dolny">
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_GminaLabel">Gmina: </label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Gmina" value="Łękociny">
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_PowiatLabel">Powiat:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Powiat" value="Łękociński">	
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_WojLabel">Województwo:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Woj" value="śląskie">
+				<label for="ctl00_Body_PersonalDataRepeater_ctl00_PhoneLabel">Numer telefonu:</label>
+					<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Phone" value="434-43-43-43">
+			</form>
+		</div>
+	</div>
+	<div id="addressData" class="userDataBox addressData" style="display: none">
+			<div class="dataBoxTitle">
+				<div class="userDataBoxPic">
+					<svg class="userDataBox_icon"><use xlink:href="Pictures/sprite.svg#icon-mail-envelope-open"></use></svg>
+				</div>
+				<h2>Dane adresowe</h2>
+				<p class="userDataBoxListTitle" id="ctl00_Body_PersonalDataRepeater_ctl00_HeaderLabel"">
+						Adres zamieszkania</p>
+				<div class="userDataBoxTitleBtnContainer">
+					<button class="personalDataEdit userDataBoxTitleBtn">Edytuj</button>
+					<button class="personalDataAdd userDataBoxTitleBtn">Dodaj</button>
+				</div>
+				<div class="userDataButtons">
+					<button class="personalDataSave userDataBoxTitleBtn" id="ctl00_Body_PersonDataEdit"
+					href="javascript:__doPostBack('ctl00$Body$PersonDataEdit','')">Zapisz</button>
+				</div> 
+			</div>
+			<div class="userDataBoxItems">
+				<form>
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_StreetLabel">Ulica:</label>
+						<input disabled="disabled" type="text" name="name" id="ctl00_Body_PersonalDataRepeater_ctl00_Street" value="Kreta">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_HouseNoLabel">Numer domu:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_HouseNo" value="12">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_LocalNoLabel">Numer mieszkania:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_LocalNo" value="33">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PostCodeLabel">Kod pocztowy:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_PostCode" value="00-332">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PostLabel">Poczta:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Post" value=" - ">
+				</form>
+			</div>
+			<div class="userDataBoxItems">
+				<form>	
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_CityLabel">Miasto:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_City" value="Kazimierz Dolny">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_GminaLabel">Gmina: </label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Gmina" value="Łękociny">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PowiatLabel">Powiat:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Powiat" value="Łękociński">	
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_WojLabel">Województwo:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Woj" value="śląskie">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PhoneLabel">Numer telefonu:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Phone" value="434-43-43-43">
+				</form>
+			</div>
+	</div>
+	<div id="addressData" class="userDataBox addressData" style="display: flex">
+			<div class="dataBoxTitle">
+				<div class="userDataBoxPic">
+					<svg class="userDataBox_icon"><use xlink:href="Pictures/sprite.svg#icon-mail-envelope-open"></use></svg>
+				</div>
+				<h2>Dane adresowe</h2>
+				<p class="userDataBoxListTitle" id="ctl00_Body_PersonalDataRepeater_ctl00_HeaderLabel"">
+						Adres korespondencyjny</p>
+				<div class="userDataBoxTitleBtnContainer">
+					<button class="personalDataEdit userDataBoxTitleBtn">Edytuj</button>
+					<button class="personalDataAdd userDataBoxTitleBtn">Dodaj</button>
+				</div>
+				<div class="userDataButtons">
+					<button class="personalDataSave userDataBoxTitleBtn" id="ctl00_Body_PersonDataEdit"
+					href="javascript:__doPostBack('ctl00$Body$PersonDataEdit','')">Zapisz</button>
+				</div> 
+			</div>
+			<div class="userDataBoxItems">
+				<form>
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_StreetLabel">Ulica:</label>
+						<input disabled="disabled" type="text" name="name" id="ctl00_Body_PersonalDataRepeater_ctl00_Street" value="Kreta">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_HouseNoLabel">Numer domu:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_HouseNo" value="12">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_LocalNoLabel">Numer mieszkania:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_LocalNo" value="33">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PostCodeLabel">Kod pocztowy:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_PostCode" value="00-332">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PostLabel">Poczta:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Post" value=" - ">
+				</form>
+			</div>
+			<div class="userDataBoxItems">
+				<form>	
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_CityLabel">Miasto:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_City" value="Kazimierz Dolny">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_GminaLabel">Gmina: </label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Gmina" value="Łękociny">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PowiatLabel">Powiat:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Powiat" value="Łękociński">	
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_WojLabel">Województwo:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Woj" value="śląskie">
+					<label for="ctl00_Body_PersonalDataRepeater_ctl00_PhoneLabel">Numer telefonu:</label>
+						<input disabled="disabled" type="text" id="ctl00_Body_PersonalDataRepeater_ctl00_Phone" value="434-43-43-43">
+				</form>
+			</div>
+		</div>
+ 
+	<div id="bankData" class="userDataBox" style="display: none">
+		<div class="dataBoxTitle">
+			<div class="userDataBoxPic">
+				<svg class="userDataBox_icon"><use xlink:href="Pictures/sprite.svg#icon-credit-card"></use></svg>
+			</div>
+			<h2>Konta bankowe</h2>
+			<div class="userDataBoxTitleBtnContainer">
+				<button class="personalDataEdit userDataBoxTitleBtn">Edytuj</button>
+				<button class="personalDataAdd userDataBoxTitleBtn">Dodaj</button>
+			</div>
+			<div class="userDataButtons">
+				<button class="personalDataSave userDataBoxTitleBtn" id="ctl00_Body_PersonDataEdit"
+				href="javascript:__doPostBack('ctl00$Body$PersonDataEdit','')">Zapisz</button>
+			</div> 
+			
+			<h4><svg class="userDataBox_icon_small"><use xlink:href="Pictures/sprite.svg#icon-time"></use></svg>Dane oczekują na akceptację</h4>
+		</div>
+		<div class="userDataBoxItems">
+			<form>
+				<label for="bankData_number">Bank nr 1</label>
+					<input disabled="disabled" type="text" name="name" id="bankData_number" value=" - ">
+			</form>
+		</div>
+		<div class="userDataBoxItems">
+				<form>
+					<label for="bankData_number">Bank nr 1</label>
+						<input disabled="disabled" type="text" name="name" id="bankData_number" value=" - ">
+				</form>
+			</div>
+	</div>
+
+	<div id="taxOfficeData" class="userDataBox" style="display: none">
+		<div class="dataBoxTitle">
+			<div class="userDataBoxPic">
+				<svg class="userDataBox_icon"><use xlink:href="Pictures/sprite.svg#icon-library"></use></svg>
+			</div>
+			<h2>Urząd Skarbowy</h2>
+			<div class="userDataBoxTitleBtnContainer">
+				<button class="personalDataEdit userDataBoxTitleBtn">Edytuj</button>
+				<button class="personalDataAdd userDataBoxTitleBtn">Dodaj</button>
+			</div>
+			<div class="userDataButtons">
+				<button class="personalDataSave userDataBoxTitleBtn" id="ctl00_Body_PersonDataEdit"
+				href="javascript:__doPostBack('ctl00$Body$PersonDataEdit','')">Zapisz</button>
+			</div> 
+		</div>
+		<div class="userDataBoxItems">
+			<form>
+				<label for="ctl00_Body_OfficeLabel1">Nazwa: </label>
+					<input disabled="disabled" type="text" name="name" id="ctl00_Body_OfficeLabel1" value=" - ">
+				<label for="ctl00_Body_OfficeLabel2">Miasto: </label>
+					<input disabled="disabled" type="text" name="name" id="ctl00_Body_OfficeLabel2" value=" - ">
+			</form>
+		</div>
+		<div class="userDataBoxItems">
+			<form>
+				<label for="ctl00_Body_OfficeLabel3">Ulica:</label>
+					<input disabled="disabled" type="text" name="name" id="ctl00_Body_OfficeLabel3" value=" - ">
+				<label for="ctl00_Body_OfficeLabel3">Kod pocztowy</label>
+					<input disabled="disabled" type="text" name="name" id="ctl00_Body_OfficeLabel3" value=" - ">
+			</form>
+		</div>
+	</div>
+   
+</div> 
+</div>
+</div>
+<div class="footer">
+</div>
+    
+
+<script type="text/javascript">
+
+//<![CDATA[
+changeResolutionProperty(true,false,'.footer');//]]>
+</script>
+<script src="js/App.js"></script>
+</form>
+</body>
+</html>
